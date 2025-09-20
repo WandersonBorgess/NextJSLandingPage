@@ -2,10 +2,10 @@
   "name": "landing-page",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "postbuild": "next-sitemap"
+ "scripts": {
+  "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider next build && next export",
+  "postbuild": "next-sitemap"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
